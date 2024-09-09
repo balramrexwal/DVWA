@@ -24,14 +24,14 @@ jobs:
       - name: Lint Code Base
         uses: github/super-linter@v5
         env:
-          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_ALL_CODEBASE: true
           # Super Linter configuration
-          VALIDATE_PHP: true
-          VALIDATE_JAVASCRIPT: true
-          VALIDATE_HTML: true
-          VALIDATE_MARKDOWN: true
+          #VALIDATE_PHP: true
+          #VALIDATE_JAVASCRIPT: true
+          #VALIDATE_HTML: true
+          #VALIDATE_MARKDOWN: true
           # Disable linters for the following file types
-          VALIDATE_GO: false
-          VALIDATE_PYTHON: false
+          #VALIDATE_GO: false
+          #VALIDATE_PYTHON: false
           DEFAULT_BRANCH: "main"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
